@@ -9,17 +9,31 @@
     \textbf{\input{1-pre-textuais/1-tituloAutores}} %Titulo do texto: 1-pre-textuais/titulo
 }
 
-
+%imprime os autores
 \newcommand{\autores}[2]{
 \fontsize{10}{15}\selectfont %muda o tamanho da fonte
     \textnormal{#1$^{1}$, #2$^{2}$}%#1 ou #2 são os argumentos recebidos
 }
 
+%imprime os e-mails dos autores
 \newcommand{\emailAutores}[2]{
     \urlstyle{}
-     \fontsize{8}{15}\selectfont %muda o tamanho da fonte
+    \fontsize{8}{15}\selectfont %muda o tamanho da fonte
     \url{[1]#1, [2]#2}
+    \vspace{0.5cm}
     
+}
+
+%imprime o resumo do trabalho
+\newcommand{\imprimirResumo}{
+    \textbf{Resumo}\\\\
+    \fontsize{11}{15}\selectfont %muda o tamanho da fonte
+    \input{1-pre-textuais/2-resumo}
+}
+
+%imprime as palavras chaves
+\newcommand{\palavrasChave}[1]{
+    \textbf{Palavras-Chave: \textnormal{#1}}
 }
 
 
