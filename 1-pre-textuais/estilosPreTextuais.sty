@@ -21,12 +21,13 @@
     \fontsize{8}{15}\selectfont %muda o tamanho da fonte
     \url{[1]#1, [2]#2}
     \vspace{0.5cm}
-    
 }
 
 %imprime o resumo do trabalho
 \newcommand{\imprimirResumo}{
-    \textbf{Resumo}\\\\
+    \newline
+    \textbf{Resumo}\\
+    \newline
     \fontsize{11}{15}\selectfont %muda o tamanho da fonte
     \input{1-pre-textuais/2-resumo}
 }
@@ -34,7 +35,21 @@
 %imprime as palavras chaves
 \newcommand{\palavrasChave}[1]{
     \textbf{Palavras-Chave: \textnormal{#1}}
+    \newline
 }
 
+%imprime o abstract do trabalho
+\newcommand{\imprimirAbstract}{
+    \newline
+     \textbf{Abstract}\\
+     \newline
+    \fontsize{11}{15}\selectfont %muda o tamanho da fonte
+    \input{1-pre-textuais/3-abstract}
+}
 
+%imprime as keywords do abstract
+\newcommand{\keywords}[1]{
+    \textbf{Keywords: \textnormal{#1}}
+    \newline
+}
 
