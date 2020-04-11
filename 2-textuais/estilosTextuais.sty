@@ -1,15 +1,17 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%          Criação de comandos        %%
+%%    Criação de comandos - texto      %%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%imprime todo  texto em duas colunas
-
-\newcommand{\imprimirIntroducao}{
-    \textbf{\newpage{Introdução}}
-    \begin{multicols}{2}
+%imprime os elementos textuais
+\newcommand{\imprimirTexto}{
+    \newpage    % a introdução será iniciada em uma nova página
+    \begin{multicols}{2} %Divide a folha em duas colunas
+        %inclusão da introdução
         \input{2-textuais/1-introducao}
+        %inclusão do referencial teórico
+        
+        \input{2-textuais/2-referencialTeorico}
     \end{multicols}
 }
-
 
