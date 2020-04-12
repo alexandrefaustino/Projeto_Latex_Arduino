@@ -6,7 +6,7 @@
 %imprime os elementos textuais
 \newcommand{\imprimirTexto}{
     \newpage    % a introdução será iniciada em uma nova página
-    \begin{multicols}{2} %Divide a folha em duas colunas
+    \begin{multicols*}{2} %Divide a folha em duas colunas
         %inclusão da introdução
         \input{2-textuais/1-introducao}
         
@@ -21,6 +21,9 @@
         
          %inclusão da conclusão
         \input{2-textuais/5-conclusao}
-    \end{multicols}
+        
+        %referencias bibliográficas
+        \imprimirReferencias
+    \end{multicols*}
 }
 
