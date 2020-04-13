@@ -6,20 +6,23 @@
 %imprime o título do documento
 \newcommand{\imprimirTitulo}{
     \fontsize{12}{15}\selectfont %muda o tamanho da fonte
+    \noindent
     \textbf{\input{1-pre-textuais/1-tituloAutores}} %Titulo do texto: 1-pre-textuais/titulo
 }
 
 %imprime os autores
-\newcommand{\autores}[2]{
-\fontsize{10}{15}\selectfont %muda o tamanho da fonte
-    \textnormal{#1$^{[1]}$, #2$^{[2]}$}%#1 ou #2 são os argumentos recebidos
+\newcommand{\autores}[5]{
+    
+    \fontsize{10}{15}\selectfont %muda o tamanho da fonte
+    \textnormal{\newline #1$^{[1]}$, #2$^{[2]}$,  #3$^{[3]}$,  #4$^{[4]}$,  #5$^{[5]}$}%#1 ou #2 são os argumentos recebidos
 }
 
 %imprime os e-mails dos autores
-\newcommand{\emailAutores}[2]{
+\newcommand{\emailAutores}[5]{
     \urlstyle{}
     \fontsize{8}{15}\selectfont %muda o tamanho da fonte
-    \url{[1]#1, [2]#2}
+    \noindent
+    \url{[1]#1, [2]#2, [3]#3, [4]#4, [5]#5}
     \vspace{0.5cm}
 }
 
@@ -33,6 +36,7 @@
 
 %imprime as palavras chaves
 \newcommand{\palavrasChave}[1]{
+    \noindent \\
     \textbf{Palavras-Chave: \textnormal{#1}}
     \newline
 }
@@ -48,6 +52,7 @@
 
 %imprime as keywords do abstract
 \newcommand{\keywords}[1]{
+    \noindent \\
     \textbf{Keywords: \textnormal{#1}}
     \newline
 }
